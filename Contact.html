@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+      <meta charset="UTF-8" />
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>智能视觉实验室</title>
+   
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/fontawesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <progress value="0" id="eskimo-progress-bar"></progress>
+  <div class="container">
+  <!-- 菜单栏 -->
+    <img src="images/Peterlogo.png" /> 
+  <!--菜单栏-->
+  <nav class="navbar navbar-default" role="navigation">
+ <ul class="nav navbar-nav" id = "nav" style="font-weight:bold; color:blue;">
+        <li>
+          <a href="index.html"><span style="color: #0909ef; ">个人简介</span></a>
+        </li>
+		 <li>
+          <a href="lab.html"><span style="color: #1414db; ">实验室</span></a>
+        </li>
+        <li>
+          <a href="Result.html"><span style="color: #081ee5; ">研究成果</span></a>
+        </li>
+		<li>
+          <a href="Course.html"><span style="color: #0837e7; ">授课</span></a>
+        </li>
+     <li>
+         <a href="news.html"><span style="color: #0b22f5; ">新闻动态</span></a>
+     </li>
+
+     <li>
+          <a href="Contact.html"><span style="color: #071eec; ">招生信息</span></a>
+        </li>
+        
+       
+      </ul>
+  </nav>
+  <div class="clearfix"></div>
+  <!-- 招生信息 -->
+  <div>
+    <h3>裴炤教授 招生信息(<span style="color: red; ">2022</span>)</h3>
+    <p><strong style="color:#2196F3">硕士生招生：</strong>2022级硕士招生进行中，欢迎有志于人工智能、计算机视觉与图像处理、深度学习等领域的学生保送或报考，本校外校不限。请将个人简历，成绩单及相关资料发送到邮箱：zpei@snnu.edu.cn。 录用学生会提前进行科研培训，并有机会参加顶尖实验室科研课题，推免直博等。所指导的全部硕士毕业研究生均获得陕西师范大学优秀毕业研究生称号。</p>
+     <p><strong style="color:#2196F3">本科生招生:</strong> 长期欢迎优秀本科生随时和我联系！近年来，本团队多名本科生发表包括SCI一区在内的高水平学术论文，所指导的本科生多次获得陕西师范大学优秀本科毕业论文。</p>
+  </div>
+
+      <script>
+          function setIframeHeight(iframe) {
+              if (iframe) {
+                  var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+                  if (iframeWin.document.body) {
+                      iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                  }
+              }
+          };
+
+          window.onload = function () {
+              setIframeHeight(document.getElementById('external-frame'));
+          };
+      </script>
+  
+  
+  <!-- 联系地址 -->
+    <div>
+      <h3>联系地址</h3>
+     
+        
+          <p>陕西师范大学长安校区，文津楼计算机科学学院。</p>
+        <iframe id="external-frame" src = "map.html" width="100%" height="800" frameborder="0" scrolling="auto" onload = "setIframeHeight(this)"></iframe>
+       
+      
+    </div>
+      <script>
+          let chileren=document.getElementById("nav").getElementsByTagName("li");
+          var i;
+          for (i=0;i<chileren.length;i++) {
+              chileren[i].text = "test";
+          }
+      </script>
+  
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/panel.js"></script> 
+  <script src="js/reading-position-indicator.js"></script> 
+  <script src="js/custom.js"></script></body>
+</html>
