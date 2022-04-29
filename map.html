@@ -1,72 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <title>地图展示</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <style>
-    body,
-    html,
-    #container {
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      font-family: "微软雅黑";
-    }
-    .info {
-      z-index: 999;
-
-      width: auto;
-      min-width: 22rem;
-      padding: .75rem 1.25rem;
-      margin-left: 1.25rem;
-      position: fixed;
-      top: 1rem;
-      background-color: #fff;
-      border-radius: .25rem;
-      font-size: 14px;
-      color: #666;
-      box-shadow: 0 2px 6px 0 rgba(27, 142, 236, 0.5);
-    }
-  </style>
-  <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=nejQwNWKwZdoV81WWX3TRwaxulrVLHTn"></script>
-</head>
+<html>
 <body>
 
-<div id="container"></div>
+
+
+<img src="uploads/2018/05/map.jpg" alt="map" width="100%" height="auto
+">
+
 </body>
 </html>
-<script>
-
-  var map = new BMapGL.Map('container'); // 创建Map实例
-  var point=new BMapGL.Point(108.8974584,34.16093711);
-  map.centerAndZoom(point, 18); // 初始化地图,设置中心点坐标和地图级别
-  map.enableScrollWheelZoom(true); // 开启鼠标滚轮缩放
-  var scaleCtrl = new BMapGL.ScaleControl();  // 添加比例尺控件
-  map.addControl(scaleCtrl);
-  var zoomCtrl = new BMapGL.ZoomControl();  // 添加比例尺控件
-  map.addControl(zoomCtrl);
-  var navi3DCtrl = new BMapGL.NavigationControl3D();  // 添加3D控件
-  map.addControl(navi3DCtrl);
-
-
-
-  var marker = new BMapGL.Marker(point);
-  map.addOverlay(marker);
-  var opts = {
-    width: 200,
-    height: 100,
-    title: '陕西师范大学文津楼'
-  };
-  var infoWindow = new BMapGL.InfoWindow('联系地址：陕西省西安市长安区西长安街620号', opts);
-
-  marker.addEventListener('click', function () {
-    map.openInfoWindow(infoWindow, point);
-  });
-
-
-
-</script>
