@@ -110,8 +110,8 @@
 
       <ul id="con1">
         <li>
-          <a id="news_1">2023-9-10 论文<font color="blue">&quot;Autofocusing for Synthetic Aperture Imaging Based on
-              Pedestrian Trajectory Prediction&quot;</font>被IEEE Transactions on Circuits and Systems for Video
+          <a id="news_1">2023-9-10 论文<span id="news_2">&quot;Autofocusing for Synthetic Aperture Imaging Based on
+            Pedestrian Trajectory Prediction&quot;</span>被IEEE Transactions on Circuits and Systems for Video
             Technology期刊录用</a>
         </li>
         <li>
@@ -123,7 +123,7 @@
               Prediction&quot;</font>发表在IEEE Transactions on Intelligent Transportation Systems。</a>
         </li>
         <li>
-          <a>2022-6-18 实验室万志杨同学获得陕西师范大学2022届<font color="red">本科生优秀毕业论文。</font> </a>
+          <a>2022-6-18 实验室万志杨同学获得陕西师范大学2022届本科生优秀毕业论文。 </a>
         </li>
         <li>
           <a>2022-6-3 论文<font color="blue">&quot;Multi-scale attention-based pseudo-3D convolution neural network for
@@ -239,6 +239,7 @@
 </body>
 <script>
   var changeColor = document.getElementById('news_1');
+  var changeColor_blue = document.getElementById('news_2');
   changeColor.style.color = "red";
   // 设置目标日期（格式：年，月，日）。注意：月份是从0开始的。
   const targetDate = new Date(2023, 9, 30); // 2023年10月30日
@@ -251,6 +252,7 @@
   if (currentDate > targetDate) {
     // 如果当前日期在目标日期之后，更改字体颜色
     changeColor.style.color = "black";
+    changeColor.style.color = "blue";
   }
 </script>
 
