@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta name="generator"
+
+<head>
+  <meta name="generator"
     content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
-    <title>智能视觉实验室</title>
-    <!-- META TAGS -->
-    <meta charset="UTF-8" />
-    <!-- CSS FILES -->
-    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="css/fontawesome.css" rel="stylesheet" type="text/css" />
-    <link href="css/slick.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
+  <title>智能视觉实验室</title>
+  <!-- META TAGS -->
+  <meta charset="UTF-8" />
+  <!-- CSS FILES -->
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/fontawesome.css" rel="stylesheet" type="text/css" />
+  <link href="css/slick.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    #box {
+      height: 200px;
+      margin: 0 auto;
+      overflow: auto
+    }
 
-        #box{height:200px;margin:0 auto;overflow: auto}
 
-        
 
-        a{text-decoration: none;color:#000;}
+    a {
+      text-decoration: none;
+      color: #000;
+    }
 
-        a:hover{color:#f00}
-        ::-webkit-scrollbar{
-          display:none;
-        }
+    a:hover {
+      color: #f00
+    }
 
-    
-</style>
-  </head>
-  <body>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
   <!-- 实验室简介 -->
   <progress value="0" id="eskimo-progress-bar"></progress>
   <div class="container">
-  <img src="images/Peterlogo.png" /> 
-  <!--菜单栏-->
+    <img src="images/Peterlogo.png" />
+    <!--菜单栏-->
     <nav class="navbar navbar-default" role="navigation">
-      <ul class="nav navbar-nav" id = "nav" style="font-weight:bold; color:blue;">
+      <ul class="nav navbar-nav" id="nav" style="font-weight:bold; color:blue;">
 
         <li>
           <a href="index.html"><span style="color: #2196F2; ">个人简介</span></a>
@@ -63,64 +72,83 @@
 
       </ul>
     </nav>
-  <!-- 简介 -->
-  <div class="row">
-    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-      <p class="text-justify:inter-ideograph">裴炤 工学博士，教授，博士生导师，计算机科学学院副院长。西北工业大学计算机学院本科、硕士，西北工业大学与U. of Alberta，Canada联合培养博士。2015年获陕西省优秀博士学位论文。2017年10月至2018年9月，担任加拿大University of Alberta计算机系访问教授。中国图象图形学会成像探测与感知专委会委员，中国体视学会青工委委员，中国体视学学会图像分析分会委员，陕西省信号处理学会理事。担任IEEE Transactions on Circuits and Systems for Video Technology，IEEE Transactions on Cybernetics，Pattern Recognition，Neurocomputing，Journal of Selected Topics in Applied Earth Observations and Remote Sensing，Computers and Electrical Engineering，IET Computer Vision，Frontiers, 电子学报和自动化学报审稿人。主要从事计算机视觉与人工智能、图像处理与模式识别，机器学习的相关研究。主持国家自然基金面上项目、国家自然基金青年项目、陕西省重点研发计划、陕西省自然科学基金、中央高校基本科研业务费重点项目，参与国家自然科学基金重点项目、国家863、相关横向课题等项目10余项。在计算机视觉与模式识别领域重要期刊TCSVT，PR等国内外刊物及国际会议上发表论文30余篇，申请发明专利30余件（已授权16件），登记软件著作权30余项。</p>
+    <!-- 简介 -->
+    <div class="row">
+      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        <p class="text-justify:inter-ideograph">裴炤 工学博士，教授，博士生导师，计算机科学学院副院长。西北工业大学计算机学院本科、硕士，西北工业大学与U. of
+          Alberta，Canada联合培养博士。2015年获陕西省优秀博士学位论文。2017年10月至2018年9月，担任加拿大University of
+          Alberta计算机系访问教授。中国图象图形学会成像探测与感知专委会委员，中国体视学会青工委委员，中国体视学学会图像分析分会委员，陕西省信号处理学会理事。担任IEEE Transactions on Circuits
+          and Systems for Video Technology，IEEE Transactions on Cybernetics，Pattern Recognition，Neurocomputing，Journal
+          of Selected Topics in Applied Earth Observations and Remote Sensing，Computers and Electrical Engineering，IET
+          Computer Vision，Frontiers,
+          电子学报和自动化学报审稿人。主要从事计算机视觉与人工智能、图像处理与模式识别，机器学习的相关研究。主持国家自然基金面上项目、国家自然基金青年项目、陕西省重点研发计划、陕西省自然科学基金、中央高校基本科研业务费重点项目，参与国家自然科学基金重点项目、国家863、相关横向课题等项目10余项。在计算机视觉与模式识别领域重要期刊TCSVT，PR等国内外刊物及国际会议上发表论文30余篇，申请发明专利30余件（已授权16件），登记软件著作权30余项。
+        </p>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <img src="uploads/2018/05/peter.jpg" alt="Jane Doe" class="img-fluid mx-auto d-block eskimo-img-shadow" />
+      </div>
     </div>
-    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-      <img src="uploads/2018/05/peter.jpg" alt="Jane Doe" class="img-fluid mx-auto d-block eskimo-img-shadow" />
+    <!--研究方向-->
+    <div class="row">
+      <div class="col-12 col-lg-12">
+        <strong>主要研究方向：</strong>计算机视觉与图像处理、人工智能与机器学习
+        <br />
+        <br />
+        <br /></div>
+      <div class="col-12 col-lg-12">
+        <p style="color:red">
+          <strong>热烈欢迎拟报考2023级的硕士加入实验室！如果你感兴趣，请将个人简历发送至邮箱：zpei@snnu.edu.cn。</strong>
+        </p>
+        <p style="color:red">
+          <strong>常年诚招优秀人才：优秀教职人才，优秀（师资）博士后。诚挚欢迎具有相关专业背景的博士毕业生加盟本团队！</strong>
+        </p>
+
+      </div>
     </div>
-  </div>
-  <!--研究方向-->
-  <div class="row">
-    <div class="col-12 col-lg-12">
-    <strong>主要研究方向：</strong>计算机视觉与图像处理、人工智能与机器学习
-    <br />
-    <br />
-    <br /></div>
-    <div class="col-12 col-lg-12">
-      <p style="color:red">
-        <strong>热烈欢迎拟报考2023级的硕士加入实验室！如果你感兴趣，请将个人简历发送至邮箱：zpei@snnu.edu.cn。</strong>
-      </p>
-	    <p style="color:red">
-	<strong>常年诚招优秀人才：优秀教职人才，优秀（师资）博士后。诚挚欢迎具有相关专业背景的博士毕业生加盟本团队！</strong>
-      </p>
-	  
+    <h3 style="color:red"><a href="news.html">News</a></h3>
+    <div id="box" onmouseov="Stop()" οnclick="window.open('news.html','_self')">
+
+      <ul id="con1">
+        <li>
+          <a id="news_1">2023-9-10 论文<font color="blue">&quot;Autofocusing for Synthetic Aperture Imaging Based on
+              Pedestrian Trajectory Prediction&quot;</font>被IEEE Transactions on Circuits and Systems for Video
+            Technology期刊录用</a>
+        </li>
+        <li>
+          <a>2023-5-9 论文<font color="blue">&quot;Synthetic Aperture Imaging Using Multi-View Super-Resolution&quot;
+            </font>被Journal of Electronic Imaging期刊录用。</a>
+        </li>
+        <li>
+          <a>2023-1-16 论文<font color="blue">&quot;Long-Short Term Spatio-Temporal Aggregation for Trajectory
+              Prediction&quot;</font>发表在IEEE Transactions on Intelligent Transportation Systems。</a>
+        </li>
+        <li>
+          <a>2022-6-18 实验室万志杨同学获得陕西师范大学2022届<font color="red">本科生优秀毕业论文。</font> </a>
+        </li>
+        <li>
+          <a>2022-6-3 论文<font color="blue">&quot;Multi-scale attention-based pseudo-3D convolution neural network for
+              Alzheimer's disease diagnosis using structural MRI&quot;</font>被Pattern Recognition期刊录用。</a>
+        </li>
+        <li>
+          <a>2022-4-23 恭喜实验室万志杨同学收获哔哩哔哩公司与字节跳动公司的Offer！</a>
+        </li>
+
+        <!-- <li>
+        <a href="https://ccs.snnu.edu.cn/info/1142/10839.htm" target="_blank">2021-6-03 邀请南京信息工程大学人工智能学院杨博博士前来交流</a>
+      </li>
+      
+      <li>
+        <a href="https://ccs.snnu.edu.cn/info/1142/10812.htm" target="_blank">2021-5-30 邀请上海交通大学王淼博士前来交流</a>
+      </li> -->
+        <br />
+
+      </ul>
+      <ul id="con2"></ul>
+
     </div>
-  </div>
-  <h3 style="color:red"><a href = "news.html">News</a></h3>
-  <div id="box"  onmouseov="Stop()"  οnclick="window.open('news.html','_self')">
 
-    <ul id="con1" >
-      <li>
-        <a>2023-9-10 论文<font color="blue">&quot;Autofocusing for Synthetic Aperture Imaging Based on Pedestrian Trajectory Prediction&quot;</font>被IEEE Transactions on Circuits and Systems for Video Technology期刊录用</a>
-      </li>
-      <li>
-        <a>2023-5-9 论文<font color="blue">&quot;Synthetic Aperture Imaging Using Multi-View Super-Resolution&quot;</font>被Journal of Electronic Imaging期刊录用。</a>
-      </li>
-      <li>
-        <a>2023-1-16 论文<font color="blue">&quot;Long-Short Term Spatio-Temporal Aggregation for Trajectory Prediction&quot;</font>发表在IEEE Transactions on Intelligent Transportation Systems。</a>
-      </li>
-      <li>
-        <a>2022-6-18 实验室万志杨同学获得陕西师范大学2022届<font color="red">本科生优秀毕业论文。</font> </a>
-      </li>
-      <li>
-        <a>2022-6-3 论文<font color="blue">&quot;Multi-scale attention-based pseudo-3D convolution neural network for Alzheimer's disease diagnosis using structural MRI&quot;</font>被Pattern Recognition期刊录用。</a>
-      </li>
-	        <li>
-		 <a>2022-4-23 恭喜实验室万志杨同学收获哔哩哔哩公司与字节跳动公司的Offer！</a>   
-	    </li>
-     
-      <br/>
-
-    </ul>
-     <ul id="con2"></ul>
-
-  </div>
-
-<!--    <div >-->
-<!--
+    <!--    <div >-->
+    <!--
 <marquee id = "marFir" direction = "up" scrollamount="2" behavior="scroll" loop = "infinte" scrolldelay="60" onfinish="this.firstChild.innerHTML+=this.firstChild.interHTML;">
       <ul id="con1" >
 
@@ -151,7 +179,7 @@
 </marquee>
     </div>
 -->
- 
+
   </div>
   <div class="row">
     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -160,54 +188,70 @@
       </a>
     </div>
   </div>
-<script type="text/javascript">
 
-  
-    var box=document.getElementById("box");
+  <script type="text/javascript">
+    var box = document.getElementById("box");
 
-    var con1=document.getElementById("con1");
+    var con1 = document.getElementById("con1");
 
-    var con2=document.getElementById("con2");
-
-
-    var s=document.getElementsByTagName("a");
-
-    var speed=50;
-
-    window.onload=Up();
-    
-
-    function  ScrollUp(){
-
-        if( box.scrollTop>=con2.scrollHeight){
-
-            con2.innerHTML+=con1.innerHTML;
-            // con3.innerHTML=con1.innerHTML;
-            // con1.innerHTML = " ";
+    var con2 = document.getElementById("con2");
 
 
-        }else
+    var s = document.getElementsByTagName("a");
 
-           box.scrollTop++;
+    var speed = 50;
+
+    window.onload = Up();
+
+
+    function ScrollUp() {
+
+      if (box.scrollTop >= con2.scrollHeight) {
+
+        con2.innerHTML += con1.innerHTML;
+        // con3.innerHTML=con1.innerHTML;
+        // con1.innerHTML = " ";
+
+
+      } else
+
+        box.scrollTop++;
 
     }
 
-    var i=setInterval("ScrollUp()",speed);
+    var i = setInterval("ScrollUp()", speed);
 
-    function Stop(){
+    function Stop() {
 
-        clearInterval(i);
-    }
-    function Up(){
-
-        i=setInterval("ScrollUp()",speed);
+      clearInterval(i);
     }
 
+    function Up() {
 
+      i = setInterval("ScrollUp()", speed);
+    }
+  </script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/panel.js"></script>
+  <script src="js/reading-position-indicator.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+<script>
+  var changeColor = document.getElementById('news_1');
+  changeColor.style.color = "red";
+  // 设置目标日期（格式：年，月，日）。注意：月份是从0开始的。
+  const targetDate = new Date(2023, 9, 30); // 2023年10月30日
+
+  // 获取当前日期并设置时分秒为0，以便只比较日期
+  const currentDate = new Date();
+  currentDate.setHours(0, 0, 0, 0);
+
+  // 比较当前日期和目标日期
+  if (currentDate > targetDate) {
+    // 如果当前日期在目标日期之后，更改字体颜色
+    changeColor.style.color = "black";
+  }
 </script>
-  <script src="js/jquery-3.3.1.min.js"></script> 
-  <script src="js/bootstrap.min.js"></script> 
-  <script src="js/panel.js"></script> 
-  <script src="js/reading-position-indicator.js"></script> 
-  <script src="js/custom.js"></script></body>
+
 </html>
